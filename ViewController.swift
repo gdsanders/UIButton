@@ -37,18 +37,21 @@ class ViewController: UIViewController {
         makeItBlueButton.setTitle("It is now BLUE!", forState: UIControlState.Normal)
         makeItBlueButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         makeItBlueButton.backgroundColor = UIColor.grayColor()
+        alternativeImageButton.setImage(UIImage(named: "nextButtonAlternative"), forState: UIControlState.Normal)
+
     }
     
     @IBAction func fireTheLasersButtonPressed(sender: UIButton) {
-        fireLasersButton.enabled = false
-        fireLasersButton.setTitle("Get outta Dodge", forState: UIControlState.Disabled)
+        fireLasersButton.setTitle("Get outta Dodge", forState: UIControlState.Normal)
         fireLasersButton.backgroundColor = UIColor.orangeColor()
-        fireLasersButton.setTitle("Get outta Dodge", forState: UIControlState.Disabled)
+        fireLasersButton.setTitle("Get outta Dodge", forState: UIControlState.Normal)
+        view.backgroundColor = UIColor(red: 209/255, green: 107/255, blue: 20/255, alpha: 1)
         
     }
     
     @IBAction func imageOnlyButtonPressed(sender: UIButton) {
         imageOnlyButton.setImage(UIImage(named: "nextButtonAlternative"), forState: UIControlState.Normal)
+        view.backgroundColor = UIColor.greenColor()
     }
         
     
@@ -57,6 +60,7 @@ class ViewController: UIViewController {
         alternativeImageButton.setImage(nil, forState: UIControlState.Normal)
         alternativeImageButton.setBackgroundImage(UIImage(named: "greenOval"), forState: UIControlState.Normal)
         alternativeImageButton.setTitle("OK", forState: UIControlState.Normal)
+        view.backgroundColor = UIColor.yellowColor()
         
     }
     
