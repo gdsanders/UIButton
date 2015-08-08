@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var fireLasersButton: UIButton!
     @IBOutlet weak var imageOnlyButton: UIButton!
     @IBOutlet weak var alternativeImageButton: UIButton!
+    @IBOutlet weak var changingLabel: UILabel!
     
     
     
@@ -46,12 +47,18 @@ class ViewController: UIViewController {
         fireLasersButton.backgroundColor = UIColor.orangeColor()
         fireLasersButton.setTitle("Get outta Dodge", forState: UIControlState.Normal)
         view.backgroundColor = UIColor(red: 209/255, green: 107/255, blue: 20/255, alpha: 1)
+        changingLabel.text = "What the hell just happened?"
+        changingLabel.textColor = UIColor.redColor()
+        changingLabel.backgroundColor = UIColor(hue: 207/360, saturation: 0.7, brightness: 0.9, alpha: 1)
         
     }
     
     @IBAction func imageOnlyButtonPressed(sender: UIButton) {
         imageOnlyButton.setImage(UIImage(named: "nextButtonAlternative"), forState: UIControlState.Normal)
         view.backgroundColor = UIColor.greenColor()
+        changingLabel.text = "Huh?  WTH!"
+        changingLabel.textColor = UIColor(hue: 107/360, saturation: 0.1, brightness: 0.9, alpha: 1)
+        changingLabel.backgroundColor = UIColor(red: 111/255, green: 222/255, blue: 98/255, alpha: 1)
     }
         
     
@@ -61,6 +68,9 @@ class ViewController: UIViewController {
         alternativeImageButton.setBackgroundImage(UIImage(named: "greenOval"), forState: UIControlState.Normal)
         alternativeImageButton.setTitle("OK", forState: UIControlState.Normal)
         view.backgroundColor = UIColor.yellowColor()
+        changingLabel.text = "What do we do now?"
+        changingLabel.textColor = UIColor.yellowColor()
+        changingLabel.backgroundColor = UIColor.purpleColor()
         
     }
     

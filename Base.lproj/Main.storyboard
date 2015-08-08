@@ -51,11 +51,19 @@
                                     <action selector="alternativeImageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csQ-oT-f4R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymW-l1-zQq">
+                                <rect key="frame" x="20" y="289" width="265" height="92"/>
+                                <color key="backgroundColor" red="0.49488589640000002" green="0.49488589640000002" blue="0.56817948190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.8980392157" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="alternativeImageButton" destination="dTM-m5-rOB" id="RKM-ng-dux"/>
+                        <outlet property="changingLabel" destination="ymW-l1-zQq" id="1Ip-7x-CgW"/>
                         <outlet property="fireLasersButton" destination="xsE-Dm-B2O" id="7ql-n9-DjV"/>
                         <outlet property="imageOnlyButton" destination="ubu-ZP-qaj" id="ckb-WY-XcR"/>
                         <outlet property="makeItBlueButton" destination="X86-9b-TeP" id="5gg-lu-mfT"/>
@@ -63,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="387"/>
+            <point key="canvasLocation" x="161" y="303"/>
         </scene>
     </scenes>
     <resources>
