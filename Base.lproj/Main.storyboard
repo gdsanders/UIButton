@@ -22,26 +22,52 @@
                                 <state key="normal" title="Make it Blue">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="makeItBlueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sS2-hb-enp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-Dm-B2O">
-                                <rect key="frame" x="20" y="172" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="20" y="101" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.18039215689999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                <state key="normal" title="Fire the Lasers">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.8980392157" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fireTheLasersButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atK-pJ-11P"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-ZP-qaj">
-                                <rect key="frame" x="20" y="254" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-ZP-qaj">
+                                <rect key="frame" x="20" y="181" width="63" height="63"/>
+                                <state key="normal" title="Button" image="nextButton"/>
+                                <connections>
+                                    <action selector="imageOnlyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPM-Ow-Jkt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-m5-rOB">
-                                <rect key="frame" x="203" y="254" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-m5-rOB">
+                                <rect key="frame" x="203" y="181" width="63" height="63"/>
+                                <state key="normal" title="Button" image="nextButtonAlternative"/>
+                                <connections>
+                                    <action selector="alternativeImageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csQ-oT-f4R"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="alternativeImageButton" destination="dTM-m5-rOB" id="RKM-ng-dux"/>
+                        <outlet property="fireLasersButton" destination="xsE-Dm-B2O" id="7ql-n9-DjV"/>
+                        <outlet property="imageOnlyButton" destination="ubu-ZP-qaj" id="ckb-WY-XcR"/>
+                        <outlet property="makeItBlueButton" destination="X86-9b-TeP" id="5gg-lu-mfT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nextButton" width="63" height="63"/>
+        <image name="nextButtonAlternative" width="63" height="63"/>
+    </resources>
 </document>
