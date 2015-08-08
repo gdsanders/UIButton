@@ -35,21 +35,32 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.blueColor()
         
         makeItBlueButton.setTitle("It is now BLUE!", forState: UIControlState.Normal)
+        makeItBlueButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        makeItBlueButton.backgroundColor = UIColor.grayColor()
     }
     
     @IBAction func fireTheLasersButtonPressed(sender: UIButton) {
+        fireLasersButton.enabled = false
+        fireLasersButton.setTitle("Get outta Dodge", forState: UIControlState.Disabled)
+        fireLasersButton.backgroundColor = UIColor.orangeColor()
+        fireLasersButton.setTitle("Get outta Dodge", forState: UIControlState.Disabled)
         
     }
     
     @IBAction func imageOnlyButtonPressed(sender: UIButton) {
-        
+        imageOnlyButton.setImage(UIImage(named: "nextButtonAlternative"), forState: UIControlState.Normal)
     }
+        
+    
     
     @IBAction func alternativeImageButtonPressed(sender: UIButton) {
+        alternativeImageButton.setImage(nil, forState: UIControlState.Normal)
+        alternativeImageButton.setBackgroundImage(UIImage(named: "greenOval"), forState: UIControlState.Normal)
+        alternativeImageButton.setTitle("OK", forState: UIControlState.Normal)
         
     }
     
 
-
 }
+
 
